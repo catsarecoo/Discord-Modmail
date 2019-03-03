@@ -91,8 +91,8 @@ async def help(ctx):
     if ctx.guild.id == default_config.get("StaffGuildID"):
       prefix = default_config.get("BotPrefix")
       main_guild = bot.get_guild(default_config.get("MainGuildID"))
-      help1 = discord.Embed(title='Hello!', description=f"I am an instance of [IngeniousCoder\'s Modmail Bot](https://github.com/IngeniousCoder/Discord-Modmail). DM me to contact the moderators of {main_guild.name}!", colour=0xDEADBF)
-      help1.set_author(name='IngeniousCoder\'s Modmail Bot',icon_url="https://cdn.discordapp.com/attachments/388917080570986526/490075804496297995/8eebd924aeb72f681f0bc7c94226883e.png")
+      help1 = discord.Embed(title='Hello!', description=f"I am an instance of [๖ŁÃW乛 JISU\'s Modmail Bot](https://github.com/TEAMINDIA-JISU/Discord-Modmail). DM me to contact the moderators of {main_guild.name}!", colour=0xDEADBF)
+      help1.set_author(name='๖ŁÃW乛 JISU\'s Modmail Bot',icon_url="https://cdn.discordapp.com/avatars/442513368230789120/a_956b2fa6d6d8ab577db19a83f616cc05.gif")
       help1.add_field(name="Help me!",value="Donate to me [here](https://patreon.com/eltontay11) or [Star my repository!](https://github.com/IngeniousCoder/Discord-Modmail)",inline=False)
       help1.add_field(name="{}uptime".format(prefix), value="Shows bot uptime", inline=False)
       help1.add_field(name="{}help".format(prefix), inline=False, value="Shows the help message.")
@@ -104,7 +104,7 @@ async def help(ctx):
       help1.add_field(name="**{}blacklist <user>**".format(prefix), inline=False, value="Blacklist a user from using modmail. **If user has an existing thread, he/she is allowed to finish the thread.**")
       help1.add_field(name="**{}unblacklist <code>**".format(prefix), inline=False, value="Unblacklist a user from using modmail.")
       help1.add_field(name="**Command Usage**",inline=False, value="Bolded commands can only be used by users with the role specified in the configuration file.")
-      help1.set_footer(text="IngeniousMail™ V1.0 - Soruce code is available in Github!")
+      help1.set_footer(text="๖ŁÃW乛 JISU™ V1.0 - Soruce code is available in Github!")
       await ctx.send(embed=help1)
     else:
       await ctx.send("This command only works in the staff guild. If you are a user who wants to use the bot, information can be found here : https://github.com/IngeniousCoder/Discord-Modmail")
